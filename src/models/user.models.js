@@ -18,6 +18,7 @@ const userSchema =  new Schema(
             unique: true,
             lowercase: true,
             trim: true,
+            index: true
    
         },
         fullName: {
@@ -44,7 +45,7 @@ const userSchema =  new Schema(
             type: String,
             required: true,
         },
-        watchHistroy: [
+        watchHistory: [
             {
                 type: Schema.Types.ObjectId,
                 ref: "Video"

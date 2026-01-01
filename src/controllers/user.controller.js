@@ -408,7 +408,7 @@ const getUserChanelProfile = asyncHandler(async (req, res) => {
     if(!username?.trim()) {
         throw new ApiError(400, "Username is missing")
     }
-    const channel = User.aggregate([
+    const channel = await User.aggregate([
         {
             $match: {
                 username: username?.toLowerCase()
@@ -546,5 +546,4 @@ export {
     updateUserCoverImage,
     getUserChanelProfile,
     getWatchHistory
-
 }
