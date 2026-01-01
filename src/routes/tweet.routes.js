@@ -18,4 +18,6 @@ router
     .patch(updateTweet)
     .delete(deleteTweet)
 
+export default router;
+
 
