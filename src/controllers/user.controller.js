@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import { asyncHandler } from "../utils/asyncHandler.js";
 
-import {ApiError} from "../utils/apiError.js"
+import { ApiError } from "../utils/ApiError.js";
 // import { use } from "react";
 import {User} from "../models/user.models.js"
 import { Subscription } from "../models/subcription.models.js";
